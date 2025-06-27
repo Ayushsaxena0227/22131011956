@@ -1,0 +1,21 @@
+# Logging Middleware
+
+This project is a middleware logger built in Node.js for URL shortening routes. It logs each request to the evaluation server using provided credentials.
+
+## Project Structure
+
+Logging Middleware/ ├── routes/ ├── middleware/ ├── utils/ ├── screenshots/ ├── package.json ├── README.md
+
+
+## How to Run
+
+```bash
+npm install
+node index.js
+API Endpoints
+POST /shorturls → Shortens a URL
+GET /:code → Redirects to original
+GET /shorturls/:code → Get stats (clicks etc)
+Logging
+Middleware logs each request automatically
+Custom Log() utility used for logging errors
